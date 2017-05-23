@@ -19,8 +19,38 @@
   background-size: auto;
   background-repeat: repeat-x;
   opacity: 0.3;
-  background-position: center center;
+  background-position: 0 center;
   background-color: #0099cc !important;
+  -webkit-animation: animateCloud 240s linear infinite;
+  -moz-animation: animateCloud 240s linear infinite;
+  animation: animateCloud 240s linear infinite;
+}
+
+@-webkit-keyframes animateCloud {
+  0% {
+    background-position: -3000px center;
+  }
+  100% {
+    background-position: 0 center;
+  }
+}
+
+@-moz-keyframes animateCloud {
+  0% {
+    background-position: -3000px center;
+  }
+  100% {
+    background-position: 0 center;
+  }
+}
+
+@keyframes animateCloud {
+  0% {
+    background-position: -3000px center;
+  }
+  100% {
+    background-position: 0 center;
+  }
 }
 
 .is-site-bg-img .site-bg-img {
@@ -31,6 +61,7 @@
 .arrows {
   position: absolute;
   left: -30px;
+  z-index: 99;
 }
 
 @media (max-width: 768px) {
@@ -139,6 +170,44 @@
 
 #brief_3:after {
   background-image: url("../img/cecv/road.png");
+}
+
+.car {
+  position: absolute;
+  left: -15%;
+  bottom: 195px;
+  z-index: 99;
+  margin-bottom: 0;
+  -webkit-animation: animateCar 0.4s ease infinite;
+  -moz-animation: animateCar 0.4s ease infinite;
+  animation: animateCar 0.4s ease infinite;
+}
+
+@-webkit-keyframes animateCar {
+  0% {
+    margin-bottom: 0;
+  }
+  100% {
+    margin-bottom: 1px;
+  }
+}
+
+@-moz-keyframes animateCar {
+  0% {
+    margin-bottom: 0;
+  }
+  100% {
+    margin-bottom: 1px;
+  }
+}
+
+@keyframes animateCar {
+  0% {
+    margin-bottom: 0;
+  }
+  100% {
+    margin-bottom: 1px;
+  }
 }
 
 .icon-list li {
