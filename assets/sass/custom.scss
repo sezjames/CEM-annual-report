@@ -7,6 +7,10 @@
  *
  */
 
+h2 {
+	text-transform: none;
+}
+
 $primary: blue;
 
 @mixin transition($transition)
