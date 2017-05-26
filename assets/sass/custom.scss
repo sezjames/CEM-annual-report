@@ -12,6 +12,8 @@ h2 {
 }
 
 $primary: blue;
+$primary: blue;
+$primary: blue;
 
 @mixin transition($transition)
 {
@@ -186,7 +188,7 @@ $primary: blue;
 	}
 */
 	&:after{
-		background-image: url( '../img/cecv/road-2.png');
+		background-image: url( '../img/cecv/road-5.png');
 	
 	}
 	
@@ -209,6 +211,22 @@ $primary: blue;
 		
 
 }
+
+#brief_4{
+	padding-bottom: 300px;
+	padding-top: 300px;
+	background-color: #eeeeee;
+	color: white;
+	position: relative;
+	background-image: url( '../img/cecv/floor.png');
+	background-size: auto;
+	background-repeat: repeat-x;	
+	background-position: center center;
+	
+
+	
+}
+
 
 
 .car{
